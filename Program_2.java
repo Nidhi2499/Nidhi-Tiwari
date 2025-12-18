@@ -10,7 +10,10 @@ public class Program_2 {
         int a = sc.nextInt(); // asking to an input a number
 
         for (int i = 1; i <= a; i++) { // loop to print as many odd numbers as the input number
-            System.out.print((2 * i - 1) + ", ");
+            System.out.print((2 * i - 1));
+            if (i < a) { // to avoid printing comma after the last number
+                System.out.print(", ");
+            }
         }
         sc.close();
     }

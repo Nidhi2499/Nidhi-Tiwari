@@ -12,7 +12,10 @@ public class Program_3 {
 
         int number = 1;
         for (int i = 1; i <= count; i++) {
-            System.out.print(number + ", ");
+            System.out.print(number);
+            if (i != count) { // Avoid trailing comma
+                System.out.print(", ");
+            }
             number += 2;
         }
 
